@@ -1,18 +1,16 @@
-language: bash
-services: docker
-before_install:
-  - cd BookStore/
-  - echo "We are in the docker folder!"
-script:
-  - docker-compose build
 before_deploy:
-  - echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin
+  - 'echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin'
+before_install:
+  - "cd BookStore/"
+  - 'echo "We are in the docker folder!"'
 deploy:
-  provider:script
-  script: 
-    docker push monkey97/mysql-book-store;
-    docker push monkey97/book-store;
-  on:
+  provider: script
+  script: "docker push monkey97/mysql-book-store; docker push monkey97/book-store;"
+  true:
     branch: master
+language: bash
 notifications:
   email: false
+script:
+  - "docker-compose build"
+services: docker
