@@ -16,6 +16,6 @@ public class DemoPostController {
     String age = request.getParameter("age");
     System.out.println(name);
 
-    return "end";
+    return "end-game";
   }
 }
