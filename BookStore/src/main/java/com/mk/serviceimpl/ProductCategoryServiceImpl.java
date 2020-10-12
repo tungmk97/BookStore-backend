@@ -19,9 +19,9 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
   ProductCategoryRepository productCategoryRepository;
 
   @Override
-  public List<ProductCategoryVO> getAllProductCategory() {
+  public List<ProductCategory> getAllProductCategory() {
     List<ProductCategory> productCategories = productCategoryRepository.findAll();
-    return DozerMapper.parseListObject(productCategories, ProductCategoryVO.class);
+    return productCategories;
   }
 
   @Override

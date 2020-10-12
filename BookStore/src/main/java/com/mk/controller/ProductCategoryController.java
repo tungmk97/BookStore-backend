@@ -22,8 +22,8 @@ public class ProductCategoryController {
   }
 
   @GetMapping
-  public ResponseEntity<List<ProductCategoryVO>> getAllProductCategory() {
-    List<ProductCategoryVO> lstProductCategory = productCategoryService.getAllProductCategory();
+  public ResponseEntity<List<ProductCategory>> getAllProductCategory() {
+    List<ProductCategory> lstProductCategory = productCategoryService.getAllProductCategory();
     return new ResponseEntity<>(lstProductCategory, HttpStatus.OK);
   }
 

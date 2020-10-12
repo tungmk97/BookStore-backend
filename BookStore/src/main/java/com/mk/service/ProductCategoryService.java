@@ -12,7 +12,7 @@ public interface ProductCategoryService {
    *
    * @return all product category.
    */
-  List<ProductCategoryVO> getAllProductCategory();
+  List<ProductCategory> getAllProductCategory();
 
   ProductCategoryVO createNewCategory(ProductCategoryVO category);
 

@@ -1,7 +1,6 @@
 package com.mk.repository;
 
 import com.mk.data.model.Product;
-import com.mk.data.vo.ProductVO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
