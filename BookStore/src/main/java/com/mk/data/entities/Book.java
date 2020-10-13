@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
-import com.mk.data.entities.*;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;

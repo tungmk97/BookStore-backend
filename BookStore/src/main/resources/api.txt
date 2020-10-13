@@ -1,0 +1,21 @@
+Book
+- GetAll (GET): localhost:8080/api/v1/books?page=&size=
+- CreateCar(POST): localhost:8080/api/v1/books
+- UpdateCar(PUT): localhost:8080/api/v1/books
+- Delete(PUT): localhost:8080/api/v1/books/{id}
+- FindByID(GET): localhost:8080/api/v1/books/{id}
+- FindByNameContaing(GET): localhost:8080/api/v1/books?q=
+
+Genres:
+- GetAll (GET): localhost:8080/api/v1/genres
+- CreateGenres(POST): localhost:8080/api/v1/genres
+- updateGenres(PUT): localhost:8080/api/v1/genres/{id}
+- Delete(PUT): localhost:8080/api/v1/genres/{id}
+- FindByID(GET): localhost:8080/api/v1/genres/{id}
+- FindBookByGenres(GET): localhost:8080/api/v1/genres/{id}/books
+- FindByNameContaining(GET): localhost:8080/api/v1/genres?q=
+
+Author:
+- GetAll(GET): localhost:8080/api/v1/authors?q=
+- CreateAuthor(POST): localhost:8080/api/v1/authors
+- UpdateAuthor(PUT): localhost:8080/api/v1/authors

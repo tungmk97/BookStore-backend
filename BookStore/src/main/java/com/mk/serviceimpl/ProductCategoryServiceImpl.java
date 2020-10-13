@@ -1,7 +1,6 @@
 package com.mk.serviceimpl;
 
 import com.mk.conveter.DozerMapper;
-import com.mk.data.model.Product;
 import com.mk.data.model.ProductCategory;
 import com.mk.data.vo.ProductCategoryVO;
 import com.mk.exception.ResourceNotFoundException;
